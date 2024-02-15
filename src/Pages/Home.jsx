@@ -1,14 +1,17 @@
 import React from "react";
+import Typewriter from 'typewriter-effect';
+
 
 export default function Home() {
   return (
     <div className="bg-slate-200 min-h-screen">
       <div className="bg-slate-900 py-4">
-        <div className="container mx-auto flex items-center justify-center">
-          <h1 className="text-white text-4xl font-medium">KOWSICK RAM M</h1>
+        <div className="container mx-auto flex items-center justify-center w-4/5">
+          
+          
         </div>
       </div>
-      <div className="container mx-auto mt-6 flex flex-col md:flex-row items-center">
+      <div className="container w-4/5 mx-auto mt-6 flex flex-col md:flex-row items-center">
         <img
           src="/images/profile.png"
           alt="profile"
@@ -16,34 +19,17 @@ export default function Home() {
           height={300}
           width={300}
         />
-        <div className="flex flex-col w-full md:pl-4">
-          <div className="flex flex-row space-x-4 mb-4 md:mb-0">
-            <a
-              href="#"
-              className="rounded-full w-10 h-10 flex items-center justify-center"
-            >
-              <img src="./Assets/facebook.png" alt="facebook" width={50} />
-            </a>
-            <a
-              href="#"
-              className="rounded-full w-10 h-10  flex items-center justify-center"
-            >
-              <img src="./Assets/instagram.png" alt="instagram" width={50} />
-            </a>
-            <a
-              href="#"
-              className="rounded-full w-10 h-10 flex items-center justify-center"
-            >
-              <img src="./Assets/linkedin.png" alt="linkedin" width={50} />
-            </a>
-            <a
-              href="#"
-              className="rounded-full w-10 h-10 flex items-center justify-center"
-            >
-              <img src="./Assets/whatsapp.png" alt="whatsapp" width={50} />
-            </a>
-          </div>
-          <p className="text-lg text-gray-800">
+        <div className="flex flex-col w-4/5 md:pl-4">
+        <h1 className=" font-normal text-2xl">
+          Hello World, I'm  kowsick Ram M<b><Typewriter
+  options={{
+    strings: ['Full Stack Developer', 'Data Analyst', 'Graphic Designer'],
+    autoStart: true,
+    loop: true,
+  }}
+/></b></h1>
+          
+          <p className=" text-justify text-lg text-gray-800">
             Welcome to my portfolio! I'm a full-stack developer experienced in the MERN stack, which includes MongoDB, Express.js, React.js, and Node.js. Additionally, I have a passion for data science and am proficient in Python, Tableau, and machine learning techniques.
           </p>
         </div>

@@ -15,15 +15,15 @@ export default function Projects() {
     {
       title: 'Password Generator',
       description: 'A tool to generate secure passwords.',
-      image: 'https://picsum.photos/400/300?random=2',
-      githubLink: 'https://github.com/yourusername/password-generator',
+      image: '/Images/2.png',
+      githubLink: 'https://github.com/kowsickram/React-Passsword_Generator',
       demo : 'http://demo.domain.com'
     },
     {
       title: 'To-Do List',
       description: 'A simple to-do list application.',
-      image: '/Images/todo.png',
-      githubLink: '/Images/todo.png',
+      image: '/Images/1.png',
+      githubLink: 'https://github.com/kowsickram/React-To-Do',
       demo : 'http://demo.domain.com'
     },
     {
@@ -56,16 +56,17 @@ export default function Projects() {
   };
 
   return (
-    <div className="container mx-auto mt-4">
-      <h1 className="text-2xl text-center bg-teal-950 p-3 text-white uppercase font-bold mb-4">Projects</h1>
+    <>
+      <h1 className="text-2xl text-center bg-teal-950  p-3 text-white uppercase font-bold mb-4">Projects</h1>
+    <div className="container w-4/5 mx-auto mt-4">
       <div className="relative">
         <Slider {...settings} ref={sliderRef}>
           {projects.map((project, index) => (
             <div key={index}>
-              <div className="w-full p-4 bg-slate-400 h-auto rounded-lg">
+              <div className=" p-4 bg-slate-950 h-auto rounded-lg">
                 <div className="bg-white p-4 rounded-lg shadow-md">
                   <h2 className='text-center mb-2 text-lg font-semibold uppercase'>{project.title}</h2>
-                  <img src={project.image} alt={`Project ${index + 1}`} width={600} className="mx-auto" />
+                  <img src={project.image} alt={`Project ${index + 1}`} width={300} className="mx-auto rounded-lg" />
                   <p className="text-center mt-2">{project.description}</p>
                   <div className="text-center mt-4">
                     <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
@@ -85,5 +86,6 @@ export default function Projects() {
         </button>
       </div>
     </div>
+    </>
   );
 }
