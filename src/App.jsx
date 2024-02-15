@@ -6,8 +6,6 @@ import About from './Pages/About';
 import Projects from './Pages/Projects';
 import Contact from './Pages/Contact';
 
-
-
 import { Routes, Route, HashRouter } from "react-router-dom";
 
 export default function App() {
