@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="container bg-slate-950 w-full">
+    <footer className=" bg-slate-950 w-full">
       <h1 className="text-center text-white font-bold py-4">
         Get In Touch &hearts;
       </h1>

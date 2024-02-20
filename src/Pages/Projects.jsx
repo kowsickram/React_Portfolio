@@ -58,7 +58,7 @@ export default function Projects() {
   return (
     <>
       <h1 className="text-2xl text-center bg-teal-950  p-3 text-white uppercase font-bold mb-4">Projects</h1>
-    <div className="container w-4/5 mx-auto mt-4">
+    <div className="container w-4/5 min-h-screen mx-auto mt-4">
       <div className="relative">
         <Slider {...settings} ref={sliderRef}>
           {projects.map((project, index) => (

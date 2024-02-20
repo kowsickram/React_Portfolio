@@ -34,8 +34,18 @@ export default function Nav() {
         </div>
       </nav>
       {/* Mobile menu */}
-      <div className="fixed inset-0 z-10 bg-black opacity-50 transition-opacity lg:hidden" style={{opacity: mobileMenuOpen ? '1' : '0', pointerEvents: mobileMenuOpen ? 'auto' : 'none'}} onClick={() => setMobileMenuOpen(false)}></div>
+      <div className="fixed inset-0 z-10 bg-white opacity-50 transition-opacity lg:hidden" style={{opacity: mobileMenuOpen ? '1' : '0', pointerEvents: mobileMenuOpen ? 'auto' : 'none'}} onClick={() => setMobileMenuOpen(false)}></div>
       <div className="lg:hidden fixed inset-y-0 right-0 z-20 w-full max-w-sm bg-white overflow-y-auto transition-transform duration-200 ease-out" style={{transform: mobileMenuOpen ? 'translateX(0)' : 'translateX(100%)'}}>
+        {/* Mobile menu content */}
+        <div className="p-6">
+          <button
+            type="button"
+            className="absolute top-4 right-4 text-black"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            X
+          </button>
+     
         {/* Mobile menu content */}
         <div className="p-6">
           <Link to="/" className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</Link>
@@ -43,7 +53,10 @@ export default function Nav() {
           <Link to="/projects" className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Projects</Link>
           <Link to="/contact" className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 bg-slate-800 text-white hover:bg-gray-50">Contact <span aria-hidden="true">&rarr;</span></Link>
         </div>
+        </div>
       </div>
     </header>
   );
 }
+
+
